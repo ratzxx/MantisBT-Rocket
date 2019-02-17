@@ -1,0 +1,45 @@
+<?php
+/**
+ * RocketChat Integration
+ * Copyright (C) 2019 Dmitry Litus (ratzxx@gmail.com)
+ *
+ * RocketChat Integration is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+ *
+ * RocketChat Integration is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with RocketChat Integration; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+ * or see http://www.gnu.org/licenses/.
+ *
+ */
+
+$s_plugin_Rocket_ = '';
+$s_plugin_Rocket_title = 'RocketChat-интеграция';
+$s_plugin_Rocket_description = 'Добавить интеграцию со RocketChat в Mantis.';
+$s_plugin_Rocket_config = 'Настройка';
+$s_plugin_Rocket_url_webhook = 'RocketChat Webhook URL по умолчанию';
+$s_plugin_Rocket_url_webhooks = 'Доплнительные RocketChat Webhook URLы';
+$s_plugin_Rocket_skip_bulk = 'Пропускать оповещения о групповых действиях';
+$s_plugin_Rocket_link_names = 'Делать имена пользователей ссылками (это может привести к большому количеству оповещений RocketChat)';
+$s_plugin_Rocket_usernames = 'Пользователи RocketChat';
+$s_plugin_Rocket_columns = 'Колонки RocketChat';
+$s_plugin_Rocket_bug_created = '[%s] %s создал <%s|%s>.';
+$s_plugin_Rocket_bug_updated = '[%s] %s изменил <%s|%s>.';
+$s_plugin_Rocket_bug_deleted = '[%s] %s удалил %s.';
+$s_plugin_Rocket_bugnote_created = "[%s] %s прокомментировал <%s|%s>:";
+$s_plugin_Rocket_bugnote_updated = "[%s] %s изменил комментарий к <%s|%s>:";
+$s_plugin_Rocket_bugnote_deleted = "[%s] %s удалил комментарий к <%s|%s>.";
+$s_plugin_Rocket_no_user = '(никто)';
+$s_plugin_Rocket_unknown_field = '(не знаю, как выводить поле "%s")';
+$s_plugin_Rocket_skip = 'Пропустить оповещение в RocketChat';
+$s_plugin_Rocket_action_update = 'Обновить';
+
+$MANTIS_ERROR['plugin_Rocket_ERROR_NO_CURL'] = 'RocketChat-плагин требует PHP-расширение cURL (http://php.net/curl)';
+$MANTIS_ERROR['plugin_Rocket_ERROR_PHP_VERSION'] = 'RocketChat-плагин требует PHP 5.3.0 или больше';
+$MANTIS_ERROR['plugin_Rocket_ERROR_CURL'] = 'Не прошёл запрос к RocketChat.  Проверьте свой webhook URL.  Больше деталей может быть ниже.';
