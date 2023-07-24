@@ -190,7 +190,7 @@ class RocketPlugin extends MantisPlugin {
 
     function get_text_attachment($text) {
         $attachment = array('color' => '#3AA3E3', 'mrkdwn_in' => array('pretext', 'text', 'fields'));
-        $attachment['fallback'] = text . "\n";
+        $attachment['fallback'] = $text . "\n";
         $attachment['text'] = $text;
         return $attachment;
     }
